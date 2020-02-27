@@ -21,10 +21,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar'
-    downloadPath: '$(System.ArtifactsDirectory)'
     
