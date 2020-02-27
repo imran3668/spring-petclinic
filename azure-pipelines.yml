@@ -25,6 +25,6 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'petclinic'
+    artifactName: 'spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar'
     downloadPath: '$(System.ArtifactsDirectory)'
     
