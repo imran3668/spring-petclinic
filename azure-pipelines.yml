@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'AzureDevOpsDemo'
+  vmImage: 'devops'
 
 steps:
 - task: Maven@3
