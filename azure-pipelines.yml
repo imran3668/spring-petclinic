@@ -24,7 +24,8 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    Contents: '**/*.war'
+    SourceFolder: '/home/vsts/work/1/s/target'
+    Contents: 'spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar'
     TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
     OverWrite: true
@@ -33,6 +34,6 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    artifact: 'war'
+    artifact: 'spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar'
     publishLocation: 'pipeline'
   
