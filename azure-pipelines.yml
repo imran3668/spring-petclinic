@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'AzureDevOpsDemo'
 
 steps:
 - task: Maven@3
